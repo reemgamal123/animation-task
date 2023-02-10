@@ -1,0 +1,76 @@
+body{
+    height: 1000px;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: #DDD;
+    border: 2px solid rgb(169, 139, 139);
+}
+.div1{
+    animation-name: movefr;
+    /* animation-delay: 2s; */
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    position: absolute; 
+}
+.div3{
+    animation-name: movefr;
+    animation-delay: 10s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    position: absolute;
+    margin-top: 250px; 
+}
+.div5{
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-name: movefr;
+    animation-delay: 20s;
+    animation-fill-mode: forwards; 
+    position: absolute;
+    margin-top: 485px;
+}
+@keyframes movefr{
+    0%{left: 0; }
+    /* 50%{left: 50px;} */
+    100%{left: 91%;}
+}
+
+
+.div2{
+   animation-duration: 5s;
+   animation-timing-function: linear;
+   animation-delay: 5s;
+   animation-name: moverev;
+   animation-fill-mode: forwards; 
+   position: absolute;
+   right: 0;
+   margin-top: 130px;
+}
+.div4{
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 15s;
+    animation-name: moverev;
+    animation-fill-mode: forwards; 
+    position: absolute;
+    right: 0;
+    margin-top: 370px;
+}
+.div6{
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 25s;
+    animation-name: moverev;  
+    animation-fill-mode: forwards;
+    position: absolute; 
+    right: 0;
+    margin-top: 610px; 
+}
+@keyframes moverev{
+    0%{right: 0;}
+    100%{right: 91%;}
+}
